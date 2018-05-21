@@ -11,7 +11,9 @@ optional arguments:
   -w LIST, --list LIST    alternate wordlist
 ```
 
-Type `make deps` to download and verify the official diceware wordlist. You can also use your own wordlist. A wordlist is a list of words, each on their own line, starting with a number. See the following example.
+Type `make deps` to download and verify the official diceware wordlist. This wordlist uses tabs to separate the numbers from the letters, you will need to replace these with spaces (`:%s/\t/ /g` in vim),
+
+You can also use your own wordlist. A wordlist is a list of words, each on their own line, starting with a number. See the following example.
 
 ```
 1 it's
